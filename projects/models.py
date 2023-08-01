@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.postgres.fields import ArrayField
 
+
 class Project(models.Model):
     created_at = models.DateField(auto_now_add=True)
     title = models.CharField(max_length=127, unique=True)
